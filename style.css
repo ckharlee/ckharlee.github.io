@@ -1,0 +1,13 @@
+body {
+  background-image: url("Welcome.png");
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#wheel{
+  margin-left: 500px;
+  margin-top: 200px;
+}
+#heading{
+  margin: 0 
+}
