@@ -9,7 +9,9 @@ $(document).ready(function(){
 			left: "+="+move
 		},5000)
 	})
-	
+  setTimeout(function() {
+      window.location = "https://paulsonjeanty.github.io/";
+     }, 7000);
 })
 function playsound(id){
 	$(id)[0].pause();
