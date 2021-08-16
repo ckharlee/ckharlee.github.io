@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> Wheel Of Riches </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   
-   <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
-    <!-- Jquery -->
-    <script     src="https://code.jquery.com/jquery-3.6.0.min.js">
-   </script>
-   <!-- Compiled and minified JQueryUI -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-   
-  </head>
-  <body>
-    <script src="script.js"></script>
-    <h1 id="heading"> Wheel Of Riches </h1>
-    <img id="wheel" src="wheel.png" height="400" width="400">
-    <img id="start" src="startbutton.png" height="50" width="50">
-    
+
+<head>
+	<title> Wheel Of Riches </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="lottery-wheel.min.js"></script>
+</head>
+
+<body>
+
+	<h1 id="text">Greetings</h1>
+	<div id="firstpagecontent">
+		<!-- <img id="wheel" src="images/wheelofriches.png" height="500" width="500"> -->
+		<svg id="wheel"></svg>
+		<a href="/second.html" class="btn red rick" id=startbtn> Start</a>
+		<audio id="spinwheelSound" src="sounds/spinwheel.mp3"> </audio>
+			<div id=ground>
+				<img id=morty src="images/morty.png" alt="">
+			<img id=groundimg src="images/ground.png" alt="">
+		</div>
+	<img id="portal" src="images/Portal.png" height="300" width="200">
+    </div>
+	<div id = credits>
+    <h4>Members:</h4>
+    <h5>Katryna</h5>
+     <h5>Yashadii</h5>
+      <h5>Chastia(Tay)</h5>
+  </div>
+
+<script src="script.js">
+
+	</script>
+  
   </body>
 </html>

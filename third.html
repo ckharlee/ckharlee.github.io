@@ -1,8 +1,110 @@
 <!DOCTYPE html>
 <html>
-  <body>
 
+<head>
+	<title> Wheel Of Riches </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
 
-  </body>
-  </html>    
+	</script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+
+	</script>
+	<script src="lottery-wheel.min.js">
+
+	</script>
+</head>
+
+<body>
+	<div id="playerinfo">
+		<h5 class="username rick">Username</h3>
+			<h4 class="money rick">$0</h3>
+	</div>
+
+	<div id ="instructionsdiv">
+      <div id="instructions"  class="blue darken-1">
+		  <h1 class = "rick"> Instructions</h1>
+          <h5>Welcome to Wheel of Riches. The goal of the game is to solve the puzzle, while also earning $3,000 so you can exit. You must finish the puzzle before being able to exit. 
+          </h5>
+		  <h5>
+           Spin the wheel before picking a letter. When picking a letter try and choose carefully, the same way you earn money you can lose them. Picking a letter not in the puzzle, will cost half of the money amount you spun on the wheel. Landing on BR will reset your total amount to $0.</h5>
+           
+          <h5> All puzzle answers are Rick and Morty themed. Good luck and peace among worlds.  </h5>
+		   <a id = "closeinstructions" class ="btn red wave">close</a>
+      </div>
+		
+	</div>
+
+	<div id="thridpagecontainer">
+		<h1 id="thirdpageheading"> WHEEL OF RICHES </h1>
+		<div id="gamecontainer">
+			<div id = "spinthewheelmessage">
+				 <div class="card message">
+					<div class="card-content" >
+						<p>Hey genius, try spinning the wheel first.</p>
+					</div>
+				</div>
+			<img id = "clickthewheel" src="images/clickthewheel.png" alt="">
+			</div>
+			<div id = "leavegamemessage">
+				 <div class="card message">
+					<div class="card-content" >
+						<p>You will be damned for eternity, unless you pay me $3000.</p>
+					</div>
+				</div>
+			<img id = "leavegameant" src="images/ant.png" alt="">
+			</div>
+			<div id="leftrow" class ="griditem">
+				<a class="btn red letterbtn"><span>A</span></a>
+				<a class="btn red letterbtn"><span>B</span></a>
+				<a class="btn red letterbtn"><span>C</span></a>
+				<a class="btn red letterbtn"><span>D</span></a>
+				<a class="btn red letterbtn"><span>E</span></a>
+				<a class="btn red letterbtn"><span>F</span></a>
+				<a class="btn red letterbtn"><span>G</span></a>
+				<a class="btn red letterbtn"><span>H</span></a>
+				<a class="btn red letterbtn"><span>I</span></a>
+				<a class="btn red letterbtn"><span>J</span></a>
+				<a class="btn red letterbtn"><span>K</span></a>
+				<a class="btn red letterbtn"><span>L</span></a>
+				<a class="btn red letterbtn"><span>M</span></a>
+			</div>
+			<svg id="wheel" class ="griditem"></svg>
+			<div id="rightrow" class ="griditem">
+				<a class="btn red letterbtn"><span>N</span></a>
+				<a class="btn red letterbtn"><span>O</span></a>
+				<a class="btn red letterbtn"><span>P</span></a>
+				<a class="btn red letterbtn"><span>Q</span></a>
+				<a class="btn red letterbtn"><span>R</span></a>
+				<a class="btn red letterbtn"><span>S</span></a>
+				<a class="btn red letterbtn"><span>T</span></a>
+				<a class="btn red letterbtn"><span>U</span></a>
+				<a class="btn red letterbtn"><span>V</span></a>
+				<a class="btn red letterbtn"><span>W</span></a>
+				<a class="btn red letterbtn"><span>X</span></a>
+				<a class="btn red letterbtn"><span>Y</span></a>
+				<a class="btn red letterbtn"><span>Z</span></a>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div id = 'placeholder'></div>
+	<br>
+	<a id = "nextword" class = "btn lightblue wave">NextWord</a>
+	<a href="fourth.html" id ="endgame" class = "btn red wave">Pay $3000</a>
+	<audio id="spinwheelSound" src="sounds/spinwheel.mp3"> </audio>
+	<audio id="bankrupt" src="sounds/bankrupt.mp3"> </audio>
+	<audio id = "moneymoney" src="sounds/moneymoney.mp3"></audio>
+	<script src="script.js"></script>
+
+	<!-- add ant person asking for money -->
+</body>
+
+</html>
